@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Meu Portfólio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><button onclick="changePage(1)">Início</button></li>
+        <li><button onclick="changePage(2)">Sobre</button></li>
+        <li><button onclick="changePage(3)">Projetos</button></li>
+        <li><button onclick="changePage(4)">Contato</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <div class="page" id="page1">
+      <div class="cover-container">
+        <img class="background-image" src="istockphoto-901744408-170667a.jpg" alt="Background Image">
+        <div class="cover-content">
+          <h1 class="welcome-message animate">Bem-vindo ao meu Portfólio!</h1>
+          <p class="subtitle animate">Meu nome é Ryan</p>
+          <p class="description animate">
+            Sou um entusiasta de tecnologia e design apaixonado por criar<br>
+            experiências digitais incríveis. Estou constantemente aprendendo<br>
+            e aprimorando minhas habilidades para oferecer soluções criativas<br>
+            e funcionais.
+          </p>
+          <div class="gif-container">
+            <img class="gif" src="crystal.gif" alt="GIF animado">
+          </div>
+        </div>
+      </div>
+      <div id="depoimentos-container"></div>
+      <!-- Adicione o campo de texto para os depoimentos -->
+      <textarea id="depoimento" placeholder="Deixe seu depoimento aqui..."></textarea>
+      <button onclick="enviarDepoimento()">Enviar Depoimento</button>
+    </div>    
+
+    <div class="page" id="page2">
+      <h1 class="animate">Sobre Mim</h1>
+      <p class="animate texto">Olá! Sou Ryam, um entusiasta de tecnologia e web design de 16 anos. Estou constantemente explorando o mundo da criação digital e apaixonado por aprender coisas novas. Adoro estudar e me manter atualizado sobre as últimas tendências em design e desenvolvimento web. Estou sempre em busca de oportunidades para criar soluções inovadoras. Nesse portfólio você poderá conhecer um pouco sobre mim e ver um dos meus projetos.
+        Bom eu passo, bastante tempo do meu dia, estudando, no período da manha eu esudo na escola Anna Calvo de Godoy, e na parte da tarde eu vou para o SENAI-Jaguariuna, em dias de semana no senai eu faço um curso chamado Mêcanico de Bombas, e lá eu estou aprendendo bastante a fazer peças, estou aprendendo muita coisa no sentido da mêcanica, eu tambem gosto muito de ir pesca com meu pai e meu irmao.
+      </p>
+      <img class="imagem5 animate" src="pesca-em-um-lago-ao-nascer-do-sol_153375-71.avif" alt="">
+      <img class="imagem6 animate" src="configuracao-de-jogos-de-alto-angulo-com-computador_23-2149829138.avif" alt="">
+    </div>
+
+    <div class="page" id="page3">
+      <h1 class="animate">Meus Projetos</h1>
+      <div class="tic-tac-toe-board"></div>
+      <button onclick="restartGame()">Reiniciar Jogo</button>
+
+      <div class="image-container">
+        <img class="imagem animate" src="Captura de Tela (10).png" alt="">
+        <img class="imagem3 animate" src="Captura de Tela (12).png" alt="">
+        <img class="imagem2 animate" src="download.png" alt="">
+        
+      </div>
+      
+    </div>
+
+    <div class="page" id="page4">
+      <h1 class="animate">Contato</h1>
+      <p class="animate">Gmail</p>
+        <img class="logo" src="download (1).png" alt="">
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="contact-button">Ryan</a>
+      <p class="animate">Instraram</p>
+        <img class="logo" src="instagram-icone-novo_1057-2227.avif" alt="">
+      <a href="https://www.instagram.com/ryxnzinn.7?r=nametag" class="contact-button">ryxn</a>
+      <p class="animate">WhatsApp</p>
+        <img class="logo" src="124034.png" alt="">
+      <a href="https://api.whatsapp.com/send?phone=19993903014" class="contact-button">19993903014</a>
+      <div>
+        
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="tic-tac-toe.js"></script>
+</body>
+</html>
